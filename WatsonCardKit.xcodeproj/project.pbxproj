@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC356B081E68C59500E2DF14 /* WatsonCardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356AFE1E68C59500E2DF14 /* WatsonCardKit.framework */; };
+		CC356B0D1E68C59500E2DF14 /* WatsonCardKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B0C1E68C59500E2DF14 /* WatsonCardKitTests.swift */; };
+		CC356B0F1E68C59500E2DF14 /* WatsonCardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC356B011E68C59500E2DF14 /* WatsonCardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC356B1E1E68C78A00E2DF14 /* CardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B191E68C78A00E2DF14 /* CardKit.framework */; };
+		CC356B1F1E68C78A00E2DF14 /* CardKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B1A1E68C78A00E2DF14 /* CardKitRuntime.framework */; };
+		CC356B201E68C78A00E2DF14 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B1B1E68C78A00E2DF14 /* Freddy.framework */; };
+		CC356B211E68C78A00E2DF14 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B1C1E68C78A00E2DF14 /* RestKit.framework */; };
+		CC356B221E68C78A00E2DF14 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B1D1E68C78A00E2DF14 /* VisualRecognitionV3.framework */; };
+		CC356B2E1E68C83000E2DF14 /* DetectObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B281E68C83000E2DF14 /* DetectObject.swift */; };
+		CC356B2F1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B2B1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift */; };
+		CC356B301E68C83000E2DF14 /* WatsonCardKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B2D1E68C83000E2DF14 /* WatsonCardKit.swift */; };
+		CC356B331E68CD4000E2DF14 /* InputTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B321E68CD4000E2DF14 /* InputTypes.swift */; };
+		CC356B351E68CDC100E2DF14 /* DroneCardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B341E68CDC100E2DF14 /* DroneCardKit.framework */; };
+		CC356B3F1E68CF6300E2DF14 /* DetectObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B381E68CF6300E2DF14 /* DetectObjectTests.swift */; };
+		CC356B401E68CF6300E2DF14 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B391E68CF6300E2DF14 /* ApiKeys.swift */; };
+		CC356B471E68CF8900E2DF14 /* dolomites.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC356B441E68CF8900E2DF14 /* dolomites.jpg */; };
+		CC356B481E68CF8900E2DF14 /* lab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC356B451E68CF8900E2DF14 /* lab.jpg */; };
+		CC356B491E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B461E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC356B091E68C59500E2DF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC356AF51E68C59500E2DF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC356AFD1E68C59500E2DF14;
+			remoteInfo = WatsonCardKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC356AFE1E68C59500E2DF14 /* WatsonCardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WatsonCardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC356B011E68C59500E2DF14 /* WatsonCardKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatsonCardKit.h; sourceTree = "<group>"; };
+		CC356B021E68C59500E2DF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC356B071E68C59500E2DF14 /* WatsonCardKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonCardKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC356B0C1E68C59500E2DF14 /* WatsonCardKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonCardKitTests.swift; sourceTree = "<group>"; };
+		CC356B0E1E68C59500E2DF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC356B191E68C78A00E2DF14 /* CardKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CardKit.framework; path = Carthage/Build/iOS/CardKit.framework; sourceTree = "<group>"; };
+		CC356B1A1E68C78A00E2DF14 /* CardKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CardKitRuntime.framework; path = Carthage/Build/iOS/CardKitRuntime.framework; sourceTree = "<group>"; };
+		CC356B1B1E68C78A00E2DF14 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
+		CC356B1C1E68C78A00E2DF14 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		CC356B1D1E68C78A00E2DF14 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		CC356B281E68C83000E2DF14 /* DetectObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectObject.swift; sourceTree = "<group>"; };
+		CC356B2B1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonVisualRecognitionToken.swift; sourceTree = "<group>"; };
+		CC356B2D1E68C83000E2DF14 /* WatsonCardKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonCardKit.swift; sourceTree = "<group>"; };
+		CC356B321E68CD4000E2DF14 /* InputTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTypes.swift; sourceTree = "<group>"; };
+		CC356B341E68CDC100E2DF14 /* DroneCardKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DroneCardKit.framework; path = Carthage/Build/iOS/DroneCardKit.framework; sourceTree = "<group>"; };
+		CC356B381E68CF6300E2DF14 /* DetectObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectObjectTests.swift; sourceTree = "<group>"; };
+		CC356B391E68CF6300E2DF14 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		CC356B441E68CF8900E2DF14 /* dolomites.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dolomites.jpg; sourceTree = "<group>"; };
+		CC356B451E68CF8900E2DF14 /* lab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab.jpg; sourceTree = "<group>"; };
+		CC356B461E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonVisualRecognitionTokenTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC356AFA1E68C59500E2DF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC356B1E1E68C78A00E2DF14 /* CardKit.framework in Frameworks */,
+				CC356B1F1E68C78A00E2DF14 /* CardKitRuntime.framework in Frameworks */,
+				CC356B351E68CDC100E2DF14 /* DroneCardKit.framework in Frameworks */,
+				CC356B201E68C78A00E2DF14 /* Freddy.framework in Frameworks */,
+				CC356B211E68C78A00E2DF14 /* RestKit.framework in Frameworks */,
+				CC356B221E68C78A00E2DF14 /* VisualRecognitionV3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC356B041E68C59500E2DF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC356B081E68C59500E2DF14 /* WatsonCardKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC356AF41E68C59500E2DF14 = {
+			isa = PBXGroup;
+			children = (
+				CC356B001E68C59500E2DF14 /* WatsonCardKit */,
+				CC356B0B1E68C59500E2DF14 /* WatsonCardKitTests */,
+				CC356AFF1E68C59500E2DF14 /* Products */,
+				CC356B181E68C78A00E2DF14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC356AFF1E68C59500E2DF14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC356AFE1E68C59500E2DF14 /* WatsonCardKit.framework */,
+				CC356B071E68C59500E2DF14 /* WatsonCardKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC356B001E68C59500E2DF14 /* WatsonCardKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B011E68C59500E2DF14 /* WatsonCardKit.h */,
+				CC356B021E68C59500E2DF14 /* Info.plist */,
+				CC356B2C1E68C83000E2DF14 /* WatsonCardKit */,
+				CC356B251E68C83000E2DF14 /* Cards */,
+			);
+			path = WatsonCardKit;
+			sourceTree = "<group>";
+		};
+		CC356B0B1E68C59500E2DF14 /* WatsonCardKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B0C1E68C59500E2DF14 /* WatsonCardKitTests.swift */,
+				CC356B391E68CF6300E2DF14 /* ApiKeys.swift */,
+				CC356B0E1E68C59500E2DF14 /* Info.plist */,
+				CC356B361E68CF6300E2DF14 /* Action */,
+				CC356B3A1E68CF6300E2DF14 /* Token */,
+			);
+			path = WatsonCardKitTests;
+			sourceTree = "<group>";
+		};
+		CC356B181E68C78A00E2DF14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B341E68CDC100E2DF14 /* DroneCardKit.framework */,
+				CC356B191E68C78A00E2DF14 /* CardKit.framework */,
+				CC356B1A1E68C78A00E2DF14 /* CardKitRuntime.framework */,
+				CC356B1B1E68C78A00E2DF14 /* Freddy.framework */,
+				CC356B1C1E68C78A00E2DF14 /* RestKit.framework */,
+				CC356B1D1E68C78A00E2DF14 /* VisualRecognitionV3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC356B251E68C83000E2DF14 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B261E68C83000E2DF14 /* Action */,
+				CC356B311E68CD4000E2DF14 /* Input */,
+				CC356B291E68C83000E2DF14 /* Token */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		CC356B261E68C83000E2DF14 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B271E68C83000E2DF14 /* Think */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CC356B271E68C83000E2DF14 /* Think */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B281E68C83000E2DF14 /* DetectObject.swift */,
+			);
+			path = Think;
+			sourceTree = "<group>";
+		};
+		CC356B291E68C83000E2DF14 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B2A1E68C83000E2DF14 /* Watson */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		CC356B2A1E68C83000E2DF14 /* Watson */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B2B1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift */,
+			);
+			path = Watson;
+			sourceTree = "<group>";
+		};
+		CC356B2C1E68C83000E2DF14 /* WatsonCardKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B2D1E68C83000E2DF14 /* WatsonCardKit.swift */,
+			);
+			path = WatsonCardKit;
+			sourceTree = "<group>";
+		};
+		CC356B311E68CD4000E2DF14 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B321E68CD4000E2DF14 /* InputTypes.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		CC356B361E68CF6300E2DF14 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B371E68CF6300E2DF14 /* Think */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CC356B371E68CF6300E2DF14 /* Think */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B381E68CF6300E2DF14 /* DetectObjectTests.swift */,
+			);
+			path = Think;
+			sourceTree = "<group>";
+		};
+		CC356B3A1E68CF6300E2DF14 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				CC356B461E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift */,
+				CC356B441E68CF8900E2DF14 /* dolomites.jpg */,
+				CC356B451E68CF8900E2DF14 /* lab.jpg */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC356AFB1E68C59500E2DF14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC356B0F1E68C59500E2DF14 /* WatsonCardKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CC356AFD1E68C59500E2DF14 /* WatsonCardKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC356B121E68C59500E2DF14 /* Build configuration list for PBXNativeTarget "WatsonCardKit" */;
+			buildPhases = (
+				CC356AF91E68C59500E2DF14 /* Sources */,
+				CC356AFA1E68C59500E2DF14 /* Frameworks */,
+				CC356AFB1E68C59500E2DF14 /* Headers */,
+				CC356AFC1E68C59500E2DF14 /* Resources */,
+				CC356B231E68C7CA00E2DF14 /* ShellScript */,
+				CC356B241E68C7CB00E2DF14 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatsonCardKit;
+			productName = WatsonCardKit;
+			productReference = CC356AFE1E68C59500E2DF14 /* WatsonCardKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC356B061E68C59500E2DF14 /* WatsonCardKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC356B151E68C59500E2DF14 /* Build configuration list for PBXNativeTarget "WatsonCardKitTests" */;
+			buildPhases = (
+				CC356B031E68C59500E2DF14 /* Sources */,
+				CC356B041E68C59500E2DF14 /* Frameworks */,
+				CC356B051E68C59500E2DF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC356B0A1E68C59500E2DF14 /* PBXTargetDependency */,
+			);
+			name = WatsonCardKitTests;
+			productName = WatsonCardKitTests;
+			productReference = CC356B071E68C59500E2DF14 /* WatsonCardKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC356AF51E68C59500E2DF14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					CC356AFD1E68C59500E2DF14 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					CC356B061E68C59500E2DF14 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 76CMF53Q35;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CC356AF81E68C59500E2DF14 /* Build configuration list for PBXProject "WatsonCardKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC356AF41E68C59500E2DF14;
+			productRefGroup = CC356AFF1E68C59500E2DF14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC356AFD1E68C59500E2DF14 /* WatsonCardKit */,
+				CC356B061E68C59500E2DF14 /* WatsonCardKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC356AFC1E68C59500E2DF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC356B051E68C59500E2DF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC356B471E68CF8900E2DF14 /* dolomites.jpg in Resources */,
+				CC356B481E68CF8900E2DF14 /* lab.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC356B231E68C7CA00E2DF14 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"/usr/local/bin:$PATH\"\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		CC356B241E68C7CB00E2DF14 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CardKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CardKitRuntime.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DroneCardKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Freddy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC356AF91E68C59500E2DF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC356B331E68CD4000E2DF14 /* InputTypes.swift in Sources */,
+				CC356B2E1E68C83000E2DF14 /* DetectObject.swift in Sources */,
+				CC356B2F1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift in Sources */,
+				CC356B301E68C83000E2DF14 /* WatsonCardKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC356B031E68C59500E2DF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC356B0D1E68C59500E2DF14 /* WatsonCardKitTests.swift in Sources */,
+				CC356B3F1E68CF6300E2DF14 /* DetectObjectTests.swift in Sources */,
+				CC356B401E68CF6300E2DF14 /* ApiKeys.swift in Sources */,
+				CC356B491E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC356B0A1E68C59500E2DF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC356AFD1E68C59500E2DF14 /* WatsonCardKit */;
+			targetProxy = CC356B091E68C59500E2DF14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC356B101E68C59500E2DF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC356B111E68C59500E2DF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC356B131E68C59500E2DF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WatsonCardKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CC356B141E68C59500E2DF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WatsonCardKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CC356B161E68C59500E2DF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 76CMF53Q35;
+				INFOPLIST_FILE = WatsonCardKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CC356B171E68C59500E2DF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 76CMF53Q35;
+				INFOPLIST_FILE = WatsonCardKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC356AF81E68C59500E2DF14 /* Build configuration list for PBXProject "WatsonCardKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC356B101E68C59500E2DF14 /* Debug */,
+				CC356B111E68C59500E2DF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC356B121E68C59500E2DF14 /* Build configuration list for PBXNativeTarget "WatsonCardKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC356B131E68C59500E2DF14 /* Debug */,
+				CC356B141E68C59500E2DF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC356B151E68C59500E2DF14 /* Build configuration list for PBXNativeTarget "WatsonCardKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC356B161E68C59500E2DF14 /* Debug */,
+				CC356B171E68C59500E2DF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC356AF51E68C59500E2DF14 /* Project object */;
+}

@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2979EB22D9F566991F61411EAD402A31A656EC1F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B9DBB42E70CA3C1BCC85171BF8F3EAAC1E75F3CF" : 9223372036854775807,
+    "2979EB22D9F566991F61411EAD402A31A656EC1F" : 9223372036854775807,
+    "CAA449FE015D93E5CCEAF955F604D6B28C2AEE27" : 9223372036854775807,
+    "697D6D019C667A7F357F5BB879F79A2824CA12EB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "246DAD81-BEC3-4B6B-B1CC-CB4D436925A3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B9DBB42E70CA3C1BCC85171BF8F3EAAC1E75F3CF" : "drone-card-kit\/",
+    "2979EB22D9F566991F61411EAD402A31A656EC1F" : "watson-card-kit\/",
+    "CAA449FE015D93E5CCEAF955F604D6B28C2AEE27" : "card-kit-runtime\/",
+    "697D6D019C667A7F357F5BB879F79A2824CA12EB" : "card-kit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WatsonCardKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WatsonCardKit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.ibm.com:ETX-CardKit\/watson-card-kit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2979EB22D9F566991F61411EAD402A31A656EC1F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.ibm.com:ETX-CardKit\/card-kit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "697D6D019C667A7F357F5BB879F79A2824CA12EB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.ibm.com:ETX-CardKit\/drone-card-kit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9DBB42E70CA3C1BCC85171BF8F3EAAC1E75F3CF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.ibm.com:ETX-CardKit\/card-kit-runtime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CAA449FE015D93E5CCEAF955F604D6B28C2AEE27"
+    }
+  ]
+}
