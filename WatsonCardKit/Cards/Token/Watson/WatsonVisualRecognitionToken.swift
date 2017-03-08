@@ -18,7 +18,7 @@ import CardKitRuntime
 
 // MARK: WatsonVisualRecognitionToken
 
-public class WatsonVisualRecognitionToken: ExecutableTokenCard {
+public class WatsonVisualRecognitionToken: ExecutableToken {
     private let visualRecognition: VisualRecognition
     
     init(with card: TokenCard, usingApiKey apiKey: String, version: String? = nil) {

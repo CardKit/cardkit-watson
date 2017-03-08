@@ -11,7 +11,7 @@ import Foundation
 import CardKitRuntime
 import DroneCardKit
 
-public class DetectObject: ExecutableActionCard {
+public class DetectObject: ExecutableAction {
     //swiftlint:ignore cyclomatic_complexity
     override public func main() {
         guard let camera: CameraToken = self.token(named: "Camera") as? CameraToken else {
