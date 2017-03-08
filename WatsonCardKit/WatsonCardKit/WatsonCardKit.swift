@@ -137,4 +137,3 @@ extension WatsonCardKit.Token {
         isConsumed: false,
         assetCatalog: CardAssetCatalog(description: "Watson Visual Recognition token"))
 }
-
