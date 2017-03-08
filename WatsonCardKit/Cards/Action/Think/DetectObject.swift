@@ -6,13 +6,14 @@
 //  Copyright © 2017 IBM. All rights reserved.
 //
 
+// swiftlint:disable cyclomatic_complexity
+
 import Foundation
 
 import CardKitRuntime
 import DroneCardKit
 
 public class DetectObject: ExecutableActionCard {
-    //swiftlint:ignore cyclomatic_complexity
     override public func main() {
         guard let camera: CameraToken = self.token(named: "Camera") as? CameraToken else {
             return
