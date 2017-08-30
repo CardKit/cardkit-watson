@@ -12,7 +12,6 @@
 		CC356B0F1E68C59500E2DF14 /* WatsonCardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC356B011E68C59500E2DF14 /* WatsonCardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC356B1E1E68C78A00E2DF14 /* CardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B191E68C78A00E2DF14 /* CardKit.framework */; };
 		CC356B1F1E68C78A00E2DF14 /* CardKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B1A1E68C78A00E2DF14 /* CardKitRuntime.framework */; };
-		CC356B211E68C78A00E2DF14 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B1C1E68C78A00E2DF14 /* RestKit.framework */; };
 		CC356B221E68C78A00E2DF14 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B1D1E68C78A00E2DF14 /* VisualRecognitionV3.framework */; };
 		CC356B2E1E68C83000E2DF14 /* DetectObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B281E68C83000E2DF14 /* DetectObject.swift */; };
 		CC356B2F1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B2B1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift */; };
@@ -69,7 +68,6 @@
 				CC356B1E1E68C78A00E2DF14 /* CardKit.framework in Frameworks */,
 				CC356B1F1E68C78A00E2DF14 /* CardKitRuntime.framework in Frameworks */,
 				CC356B351E68CDC100E2DF14 /* DroneCardKit.framework in Frameworks */,
-				CC356B211E68C78A00E2DF14 /* RestKit.framework in Frameworks */,
 				CC356B221E68C78A00E2DF14 /* VisualRecognitionV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +356,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/CardKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CardKitRuntime.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DroneCardKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
 			);
 			name = Carthage;
@@ -535,7 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -558,7 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -571,7 +568,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -584,7 +581,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.research.WatsonCardKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

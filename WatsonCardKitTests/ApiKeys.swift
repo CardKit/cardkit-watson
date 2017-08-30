@@ -9,5 +9,5 @@
 import XCTest
 
 class ApiKeys {
-    static let justinsVisualRecoAPIKey = "f9551503df1b354ffd6e8543b2470c377d3c29a9"
+    static let visualRecognitionAPIKey = "f9551503df1b354ffd6e8543b2470c377d3c29a9"
 }

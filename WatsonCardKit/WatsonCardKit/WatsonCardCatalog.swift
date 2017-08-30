@@ -11,7 +11,7 @@ import Foundation
 import CardKit
 import CardKitRuntime
 
-public struct DroneCardCatalog: DescriptorCatalog {
+public struct WatsonCardCatalog: DescriptorCatalog {
     /// All card descriptors included in WatsonCardKit
     public let descriptors: [CardDescriptor] = [
         WatsonCardKit.Action.Think.DetectObject

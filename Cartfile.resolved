@@ -1,4 +1,4 @@
-git "git@github.ibm.com:ETX-CardKit/card-kit-runtime.git" "613d37b253dc2cbaad61297642bf37834dfb7092"
-git "git@github.ibm.com:ETX-CardKit/card-kit.git" "5c7b4500c26f33f4565798b3abd31bc0dac813bc"
-git "git@github.ibm.com:ETX-CardKit/drone-card-kit.git" "fa445ac2f472ac2457d71fce4337506bf7e99bc3"
+git "git@github.ibm.com:ETX-CardKit/card-kit-runtime.git" "1ff763ea7198c07df72aa3f05eaf7b2315a677ee"
+git "git@github.ibm.com:ETX-CardKit/card-kit.git" "e104824aee1d63342165e83ee48a9f4f72526175"
+git "git@github.ibm.com:ETX-CardKit/drone-card-kit.git" "447d8245646469fe694d1dbc2d4b522b121ca64e"
 github "watson-developer-cloud/swift-sdk" "v0.16.0"

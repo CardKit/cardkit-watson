@@ -9,7 +9,6 @@
 import Foundation
 import Accelerate
 
-import RestKit
 import VisualRecognitionV3
 
 import CardKit
