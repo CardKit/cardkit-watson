@@ -8,16 +8,12 @@
 
 import XCTest
 
-import Freddy
-
 @testable import CardKit
 @testable import CardKitRuntime
 @testable import DroneCardKit
+@testable import WatsonCardKit
 
 class DetectObjectTests: XCTestCase {
-    
-    // this is justin's API key
-    private let watsonVisualRecognitionAPIKey = "f9551503df1b354ffd6e8543b2470c377d3c29a9"
     
     override func setUp() {
         super.setUp()
@@ -31,15 +27,15 @@ class DetectObjectTests: XCTestCase {
     
     func testDetectObject() {
         // executable card
-        let detectObject = DetectObject(with: DroneCardKit.Action.Think.DetectObject.makeCard())
+        let detectObject = DetectObject(with: WatsonCardKit.Action.Think.DetectObject.makeCard())
         
         // bind inputs & tokens
-        let cameraToken = DummyCameraToken(with: DroneCardKit.Token.Camera.makeCard())
-        let telemetryToken = DummyTelemetryToken(with: DroneCardKit.Token.Telemetry.makeCard())
-        let watsonToken = WatsonVisualRecognitionToken(with: DroneCardKit.Token.Watson.VisualRecognition.makeCard(), usingApiKey: ApiKeys.justinsVisualRecoAPIKey)
+        let cameraToken = MockCameraToken(with: DroneCardKit.Token.Camera.makeCard())
+        let telemetryToken = MockTelemetryToken(with: DroneCardKit.Token.Telemetry.makeCard())
+        let watsonToken = WatsonVisualRecognitionToken(with: WatsonCardKit.Token.VisualRecognition.makeCard(), usingApiKey: ApiKeys.visualRecognitionAPIKey)
         
-        let inputBindings: [String : JSONEncodable] = ["Objects": "workroom", "Confidence": 0.7, "Frequency": 5.0]
-        let tokenBindings = ["Camera": cameraToken, "Telemetry": telemetryToken, "WatsonVisualRecognition": watsonToken]
+        let inputBindings: [String: Codable] = ["Objects": "workroom", "Confidence": 0.7, "Frequency": 5.0]
+        let tokenBindings: [String: ExecutableToken] = ["Camera": cameraToken, "Telemetry": telemetryToken, "WatsonVisualRecognition": watsonToken]
         
         detectObject.setup(inputBindings: inputBindings, tokenBindings: tokenBindings)
         
@@ -52,7 +48,7 @@ class DetectObjectTests: XCTestCase {
         }
         
         // wait for execution to finish in 5 seconds
-        waitForExpectations(timeout: DroneCardKitTests.expectationTimeout) { error in
+        waitForExpectations(timeout: 5) { error in
             if let error = error {
                 XCTFail("testDetectObject error: \(error)")
             }
@@ -67,15 +63,12 @@ class DetectObjectTests: XCTestCase {
                 return
             }
             
-            do {
-                let foundObject: DCKDetectedObject = try first.data.decode(type: DCKDetectedObject.self)
-                XCTAssertEqual(foundObject.objectName, "workroom")
-                XCTAssertTrue(foundObject.confidence > 0.7)
-                
-            } catch let error {
-                XCTFail("expected a yield of type DCKDetectedObject, error: \(error.localizedDescription)")
+            guard let foundObject: WCKDetectedObject = first.data.unboxedValue() else {
+                XCTFail("expected a yield of type WCKDetectedObject")
                 return
             }
+            XCTAssertEqual(foundObject.objectName, "workroom")
+            XCTAssertTrue(foundObject.confidence > 0.7)
         }
     }
     
@@ -84,10 +77,10 @@ class DetectObjectTests: XCTestCase {
         // token cards
         let cameraCard = DroneCardKit.Token.Camera.makeCard()
         let telemetryCard = DroneCardKit.Token.Telemetry.makeCard()
-        let watsonCard = DroneCardKit.Token.Watson.VisualRecognition.makeCard()
+        let watsonCard = WatsonCardKit.Token.VisualRecognition.makeCard()
         
         // detectObjects card
-        var detectObjects = DroneCardKit.Action.Think.DetectObject.makeCard()
+        var detectObjects = WatsonCardKit.Action.Think.DetectObject.makeCard()
         
         // bind tokens
         do {
@@ -133,12 +126,12 @@ class DetectObjectTests: XCTestCase {
         
         // set up the execution engine
         let engine = ExecutionEngine(with: deck)
-        engine.setExecutableActionType(DetectObject.self, for: DroneCardKit.Action.Think.DetectObject)
+        engine.registerDescriptorCatalog(WatsonCardCatalog())
         
         // create token instances
-        let camera = DummyCameraToken(with: cameraCard)
-        let telemetry = DummyTelemetryToken(with: telemetryCard)
-        let watson = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: watsonVisualRecognitionAPIKey)
+        let camera = MockCameraToken(with: cameraCard)
+        let telemetry = MockTelemetryToken(with: telemetryCard)
+        let watson = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.visualRecognitionAPIKey)
         
         engine.setTokenInstance(camera, for: cameraCard)
         engine.setTokenInstance(telemetry, for: telemetryCard)
@@ -150,14 +143,14 @@ class DetectObjectTests: XCTestCase {
             
             XCTAssertTrue(yields.count == 1)
             
-            var detectedObjects: [String : DCKDetectedObject] = [:]
+            var detectedObjects: [String: WCKDetectedObject] = [:]
             for yield in yields {
-                do {
-                    let object = try yield.data.decode(type: DCKDetectedObject.self)
-                    detectedObjects[object.objectName] = object
-                } catch let error {
-                    XCTFail("expected a yield of type DCKDetectedObject, error: \(error.localizedDescription)")
+                guard let object: WCKDetectedObject = yield.data.unboxedValue() else {
+                    XCTFail("expected a yield of type WCKDetectedObject")
+                    return
                 }
+                
+                detectedObjects[object.objectName] = object
             }
             
             XCTAssertNotNil(detectedObjects["workroom"], "expected to find a workroom")

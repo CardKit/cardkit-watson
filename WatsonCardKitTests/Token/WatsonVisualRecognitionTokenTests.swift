@@ -11,6 +11,7 @@ import XCTest
 @testable import CardKit
 @testable import CardKitRuntime
 @testable import DroneCardKit
+@testable import WatsonCardKit
 
 class WatsonVisualRecognitionTokenTests: XCTestCase {
     override func setUp() {
@@ -24,8 +25,8 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
     }
     
     func testWatsonVisualRecognitionWithFile() {
-        let watsonCard = DroneCardKit.Token.Watson.VisualRecognition.makeCard()
-        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.justinsVisualRecoAPIKey)
+        let watsonCard = WatsonCardKit.Token.VisualRecognition.makeCard()
+        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.visualRecognitionAPIKey)
         
         let myBundle = Bundle(for: type(of: self))
         guard let imagePath = myBundle.path(forResource: "lab", ofType: "jpg") else {
@@ -46,7 +47,7 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
              DroneCardKit.DCKDetectedObject(objectName: "ultramarine color", confidence: 0.89700000000000002),
              DroneCardKit.DCKDetectedObject(objectName: "blue color", confidence: 0.76900000000000002)]
              */
-            var results: [String : DCKDetectedObject] = [:]
+            var results: [String : WCKDetectedObject] = [:]
             for result in detectedObjects {
                 results[result.objectName] = result
             }
@@ -75,8 +76,8 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
     }
     
     func testWatsonVisualRecognitionWithUIImage() {
-        let watsonCard = DroneCardKit.Token.Watson.VisualRecognition.makeCard()
-        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.justinsVisualRecoAPIKey)
+        let watsonCard = WatsonCardKit.Token.VisualRecognition.makeCard()
+        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.visualRecognitionAPIKey)
         
         let myBundle = Bundle(for: type(of: self))
         guard let image: UIImage = UIImage(named: "dolomites.jpg", in: myBundle, compatibleWith: nil) else {
@@ -97,7 +98,7 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
              DroneCardKit.DCKDetectedObject(objectName: "blue color", confidence: 0.86899999999999999),
              DroneCardKit.DCKDetectedObject(objectName: "yellow color", confidence: 0.77700000000000002)]
              */
-            var results: [String : DCKDetectedObject] = [:]
+            var results: [String : WCKDetectedObject] = [:]
             for result in detectedObjects {
                 results[result.objectName] = result
             }
@@ -126,8 +127,8 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
     }
     
     func testWatsonVisualRecognitionSpeed() {
-        let watsonCard = DroneCardKit.Token.Watson.VisualRecognition.makeCard()
-        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.justinsVisualRecoAPIKey)
+        let watsonCard = WatsonCardKit.Token.VisualRecognition.makeCard()
+        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.visualRecognitionAPIKey)
         
         let myBundle = Bundle(for: type(of: self))
         guard let image: UIImage = UIImage(named: "dolomites.jpg", in: myBundle, compatibleWith: nil) else {
@@ -137,7 +138,7 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
         
         measure {
             do {
-                let _ = try watsonToken.classify(image: image, threshold: 0.3)
+                _ = try watsonToken.classify(image: image, threshold: 0.3)
             } catch let error {
                 XCTFail("error: \(error.localizedDescription)")
             }
@@ -145,8 +146,8 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
     }
     
     func testWatsonVisualRecognitionForError() {
-        let watsonCard = DroneCardKit.Token.Watson.VisualRecognition.makeCard()
-        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.justinsVisualRecoAPIKey)
+        let watsonCard = WatsonCardKit.Token.VisualRecognition.makeCard()
+        let watsonToken = WatsonVisualRecognitionToken(with: watsonCard, usingApiKey: ApiKeys.visualRecognitionAPIKey)
         
         let myBundle = Bundle(for: type(of: self))
         guard let imagePath = myBundle.path(forResource: "dolomites", ofType: "jpg") else {
@@ -155,7 +156,7 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
         }
         
         do {
-            let _ = try watsonToken.classify(imagePath: imagePath, threshold: 0.3)
+            _ = try watsonToken.classify(imagePath: imagePath, threshold: 0.3)
             XCTFail("expected Watson Visual Recognition to return an error (image size > 2mb)")
             
         } catch let error {

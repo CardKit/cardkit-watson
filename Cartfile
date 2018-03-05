@@ -1,6 +1,5 @@
 git "git@github.ibm.com:ETX-CardKit/card-kit.git" "master"
 git "git@github.ibm.com:ETX-CardKit/card-kit-runtime.git" "master"
-git "git@github.ibm.com:ETX-CardKit/drone-card-kit.git" "master"
 
 # watson swift sdk
 github "watson-developer-cloud/swift-sdk"

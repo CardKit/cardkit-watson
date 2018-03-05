@@ -63,7 +63,7 @@ public class DetectObject: ExecutableAction {
                             foundObject = true
                             
                             // capture the detected object in our yields
-                            self.store(data: detectedObject, forYieldIndex: 0)
+                            self.store(detectedObject, forYieldIndex: 0)
                             break
                         }
                     }
@@ -98,7 +98,7 @@ public class DetectObject: ExecutableAction {
         
         // take a picture
         if !isCancelled {
-            let options: Set<CameraPhotoOption> = [.aspectRatio(.aspect_16x9), .quality(.normal)]
+            let options: Set<CameraPhotoOption> = [.aspectRatio(.aspect16x9)]
             photo = try camera.takePhoto(options: options)
             
             // add drone's current location
