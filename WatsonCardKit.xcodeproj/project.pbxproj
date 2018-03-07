@@ -24,6 +24,7 @@
 		CC356B481E68CF8900E2DF14 /* lab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC356B451E68CF8900E2DF14 /* lab.jpg */; };
 		CC356B491E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B461E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift */; };
 		CCBEE83B1F57037200047AE5 /* WatsonCardCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBEE83A1F57037200047AE5 /* WatsonCardCatalog.swift */; };
+		CCF5401A2050612400022405 /* WatsonCardKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF540192050612400022405 /* WatsonCardKit.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		CC356B451E68CF8900E2DF14 /* lab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab.jpg; sourceTree = "<group>"; };
 		CC356B461E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonVisualRecognitionTokenTests.swift; sourceTree = "<group>"; };
 		CCBEE83A1F57037200047AE5 /* WatsonCardCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonCardCatalog.swift; sourceTree = "<group>"; };
+		CCF540172050501A00022405 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CCF540192050612400022405 /* WatsonCardKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WatsonCardKit.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		CC356AF41E68C59500E2DF14 = {
 			isa = PBXGroup;
 			children = (
+				CCF540172050501A00022405 /* README.md */,
 				CC356B001E68C59500E2DF14 /* WatsonCardKit */,
 				CC356B0B1E68C59500E2DF14 /* WatsonCardKitTests */,
 				CC356AFF1E68C59500E2DF14 /* Products */,
@@ -109,6 +113,7 @@
 				CC356B021E68C59500E2DF14 /* Info.plist */,
 				CC356B2C1E68C83000E2DF14 /* WatsonCardKit */,
 				CC356B251E68C83000E2DF14 /* Cards */,
+				CCF540182050610800022405 /* Resources */,
 			);
 			path = WatsonCardKit;
 			sourceTree = "<group>";
@@ -222,6 +227,14 @@
 			path = Token;
 			sourceTree = "<group>";
 		};
+		CCF540182050610800022405 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCF540192050612400022405 /* WatsonCardKit.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -318,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF5401A2050612400022405 /* WatsonCardKit.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
