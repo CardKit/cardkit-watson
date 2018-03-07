@@ -61,7 +61,7 @@ extension WatsonCardKit.Action.Think {
         yieldDescription: "Yields the object that was detected",
         ends: true,
         endsDescription: "Ends when one of the given objects was detected",
-        assetCatalog: CardAssetCatalog(description: "Detects an object in the camera's field of view using Watson"))
+        assetCatalog: CardAssetCatalog(description: "Detects an object in the camera's field of view using Watson", cardImageName: "think-detect-object"))
 }
 
 // MARK: - Token Cards
