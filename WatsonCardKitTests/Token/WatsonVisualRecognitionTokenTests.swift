@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+//swiftlint:disable force_unwrapping
 
 import XCTest
 
@@ -56,7 +57,7 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
              DroneCardKit.DCKDetectedObject(objectName: "ultramarine color", confidence: 0.89700000000000002),
              DroneCardKit.DCKDetectedObject(objectName: "blue color", confidence: 0.76900000000000002)]
              */
-            var results: [String : WCKDetectedObject] = [:]
+            var results: [String: WCKDetectedObject] = [:]
             for result in detectedObjects {
                 results[result.objectName] = result
             }
@@ -107,7 +108,7 @@ class WatsonVisualRecognitionTokenTests: XCTestCase {
              DroneCardKit.DCKDetectedObject(objectName: "blue color", confidence: 0.86899999999999999),
              DroneCardKit.DCKDetectedObject(objectName: "yellow color", confidence: 0.77700000000000002)]
              */
-            var results: [String : WCKDetectedObject] = [:]
+            var results: [String: WCKDetectedObject] = [:]
             for result in detectedObjects {
                 results[result.objectName] = result
             }

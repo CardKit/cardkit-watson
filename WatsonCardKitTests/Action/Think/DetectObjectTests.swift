@@ -163,6 +163,8 @@ class DetectObjectTests: XCTestCase {
             }
             
             XCTAssertNotNil(detectedObjects["workroom"], "expected to find a workroom")
+            
+            //swiftlint:disable:next force_unwrapping
             XCTAssertTrue(detectedObjects["workroom"]!.confidence > 0.7)
         })
     }

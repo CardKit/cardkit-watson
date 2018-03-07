@@ -127,6 +127,7 @@ public class DetectObject: ExecutableAction {
 
 // MARK: - TimeoutQueue
 
+//swiftlint:disable:next private_over_fileprivate
 fileprivate class LimitedLifetimeQueue<T> {
     private var array: [T] = []
     private let accessQueue = DispatchQueue(label: "LimitedLifetimeQueueAccess", attributes: .concurrent)

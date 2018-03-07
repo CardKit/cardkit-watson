@@ -17,7 +17,6 @@
 		CC356B2F1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B2B1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift */; };
 		CC356B301E68C83000E2DF14 /* WatsonCardKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B2D1E68C83000E2DF14 /* WatsonCardKit.swift */; };
 		CC356B331E68CD4000E2DF14 /* WCKInputTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B321E68CD4000E2DF14 /* WCKInputTypes.swift */; };
-		CC356B351E68CDC100E2DF14 /* DroneCardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC356B341E68CDC100E2DF14 /* DroneCardKit.framework */; };
 		CC356B3F1E68CF6300E2DF14 /* DetectObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B381E68CF6300E2DF14 /* DetectObjectTests.swift */; };
 		CC356B401E68CF6300E2DF14 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B391E68CF6300E2DF14 /* ApiKeys.swift */; };
 		CC356B471E68CF8900E2DF14 /* dolomites.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC356B441E68CF8900E2DF14 /* dolomites.jpg */; };
@@ -25,6 +24,7 @@
 		CC356B491E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC356B461E68CF8900E2DF14 /* WatsonVisualRecognitionTokenTests.swift */; };
 		CCBEE83B1F57037200047AE5 /* WatsonCardCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBEE83A1F57037200047AE5 /* WatsonCardCatalog.swift */; };
 		CCF5401A2050612400022405 /* WatsonCardKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF540192050612400022405 /* WatsonCardKit.xcassets */; };
+		CCF5401C2050810900022405 /* DroneCardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF5401D2050810900022405 /* DroneCardKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		CC356B2B1E68C83000E2DF14 /* WatsonVisualRecognitionToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonVisualRecognitionToken.swift; sourceTree = "<group>"; };
 		CC356B2D1E68C83000E2DF14 /* WatsonCardKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonCardKit.swift; sourceTree = "<group>"; };
 		CC356B321E68CD4000E2DF14 /* WCKInputTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCKInputTypes.swift; sourceTree = "<group>"; };
-		CC356B341E68CDC100E2DF14 /* DroneCardKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DroneCardKit.framework; path = Carthage/Build/iOS/DroneCardKit.framework; sourceTree = "<group>"; };
 		CC356B381E68CF6300E2DF14 /* DetectObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectObjectTests.swift; sourceTree = "<group>"; };
 		CC356B391E68CF6300E2DF14 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		CC356B441E68CF8900E2DF14 /* dolomites.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dolomites.jpg; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		CCBEE83A1F57037200047AE5 /* WatsonCardCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonCardCatalog.swift; sourceTree = "<group>"; };
 		CCF540172050501A00022405 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CCF540192050612400022405 /* WatsonCardKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WatsonCardKit.xcassets; sourceTree = "<group>"; };
+		CCF5401D2050810900022405 /* DroneCardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DroneCardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			files = (
 				CC356B1E1E68C78A00E2DF14 /* CardKit.framework in Frameworks */,
 				CC356B1F1E68C78A00E2DF14 /* CardKitRuntime.framework in Frameworks */,
-				CC356B351E68CDC100E2DF14 /* DroneCardKit.framework in Frameworks */,
+				CCF5401C2050810900022405 /* DroneCardKit.framework in Frameworks */,
 				CC356B221E68C78A00E2DF14 /* VisualRecognitionV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +135,7 @@
 			children = (
 				CC356B191E68C78A00E2DF14 /* CardKit.framework */,
 				CC356B1A1E68C78A00E2DF14 /* CardKitRuntime.framework */,
-				CC356B341E68CDC100E2DF14 /* DroneCardKit.framework */,
+				CCF5401D2050810900022405 /* DroneCardKit.framework */,
 				CC356B1C1E68C78A00E2DF14 /* RestKit.framework */,
 				CC356B1D1E68C78A00E2DF14 /* VisualRecognitionV3.framework */,
 			);
